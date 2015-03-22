@@ -93,7 +93,8 @@ namespace iServe.Models.F1APIServices {
 		/// <returns></returns>
 		public string CreateAPIUrl(string churchCode, string baseAPIUrl, string apiVersion, string partialUrl) {
 			churchCode = "ftapiwater";
-			return string.Format("https://{0}.{1}/{2}/{3}", churchCode, baseAPIUrl, apiVersion, partialUrl);
+			//return string.Format("https://{0}.{1}/{2}/{3}", churchCode, baseAPIUrl, apiVersion, partialUrl);
+            return string.Format("{0}/{1}/{2}", baseAPIUrl, apiVersion, partialUrl);
 		}
 
 		/// <summary>
@@ -241,12 +242,12 @@ namespace iServe.Models.F1APIServices {
 			return accessToken;
 		}
 
-		public HttpWebRequest CreateWebRequestFromPartialUrl(string partialUrl, Token accessToken, HttpRequestMethod httpRequestMethod) {
+		public HttpWebRequest CreateWebRequestFromPartialUrl(string partialUrl, Token accessToken, string httpRequestMethod) {
 			string fullUrl = CreateAPIUrl(ChurchCode, BaseAPIUrl, ApiVersion, partialUrl);
 			return CreateWebRequest(fullUrl, accessToken, httpRequestMethod);
 		}
 
-		public HttpWebRequest CreateWebRequest(string fullUrl, Token accessToken, HttpRequestMethod httpRequestMethod) {
+		public HttpWebRequest CreateWebRequest(string fullUrl, Token accessToken, string httpRequestMethod) {
 			HttpWebRequest webRequest;
 
 			Uri uri = new Uri(fullUrl);

@@ -1,0 +1,6 @@
+c:\users\siqi liu\documents\visual studio 2013\Projects\Etsy1\Etsy1\bin\Etsy1.dll.config
+c:\users\siqi liu\documents\visual studio 2013\Projects\Etsy1\Etsy1\bin\Etsy1.dll
+c:\users\siqi liu\documents\visual studio 2013\Projects\Etsy1\Etsy1\bin\Etsy1.pdb
+c:\users\siqi liu\documents\visual studio 2013\Projects\Etsy1\Etsy1\obj\Debug\Etsy1.csprojResolveAssemblyReference.cache
+c:\users\siqi liu\documents\visual studio 2013\Projects\Etsy1\Etsy1\obj\Debug\Etsy1.dll
+c:\users\siqi liu\documents\visual studio 2013\Projects\Etsy1\Etsy1\obj\Debug\Etsy1.pdb
